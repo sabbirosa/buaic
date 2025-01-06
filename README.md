@@ -2,12 +2,12 @@
   <img alt="HTML" src="https://img.shields.io/badge/HTML-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
   <img alt="CSS" src="https://img.shields.io/badge/CSS-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
-  <img alt="jQuery" src="https://img.shields.io/badge/jQuery-%230175C2.svg?&style=for-the-badge&logo=jquery&logoColor=white"/>
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
   <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-%2302569B.svg?style=for-the-badge&logo=bootstrap&logoColor=white" />
   <img alt="Flask" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"/>
   <img alt="Apache" src="https://img.shields.io/badge/Apache-%23D42029.svg?&style=for-the-badge&logo=apache&logoColor=white"/>
   <img alt="MySQL" src="https://img.shields.io/badge/MySQL-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img alt="Heroku" src="https://img.shields.io/badge/Heroku-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img alt="License" src="https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge"/>
 </p>
 
@@ -130,30 +130,26 @@ Install the required packages using the requirements.txt file.
 1.  Create a `.env` at the root folder of the application.
 2.  Copy the following code to the file:
 
-        ```.env
-        DATABASE_URL=YOUR_DATABASE_URL_HERE
-        MAIL_USERNAME=YOUR_EMAIL_HERE
-        MAIL_PASSWORD=YOUR_EMAIL_APP_PASSWORD_HERE
-        MAIL_DEFAULT_SENDER=YOUR_EMAIL_HERE
-
+    ```
+    DATABASE_URL=YOUR_DATABASE_URL_HERE
+    MAIL_USERNAME=YOUR_EMAIL_HERE
+    MAIL_PASSWORD=YOUR_EMAIL_APP_PASSWORD_HERE
+    MAIL_DEFAULT_SENDER=YOUR_EMAIL_HERE
     ```
 
-        Replace the placeholders YOUR_DATABASE_URL_HERE, YOUR_EMAIL_HERE, and YOUR_EMAIL_APP_PASSWORD_HERE with your actual database URL, email address, and email application password respectively.
-    ```
+    Replace the placeholders `YOUR_DATABASE_URL_HERE`, `YOUR_EMAIL_HERE`, and `YOUR_EMAIL_APP_PASSWORD_HERE` with your actual database URL, email address, and email application password respectively.
 
-    - DATABASE_URL: This is the connection URL for your MySQL database. It typically follows the format mysql://username:password@hostname/database_name.
+    **DATABASE_URL:** This is the connection URL for your MySQL database. It typically follows the format mysql://username:password@hostname/database_name.
 
-    - MAIL_USERNAME: This is your email address used for sending emails.
+    **MAIL_USERNAME:** This is your email address used for sending emails.
 
-    - MAIL_PASSWORD: This is the password generated for your email application. If you're using Gmail, you may need to generate an app password.
+    **MAIL_PASSWORD:** This is the password generated for your email application. If you're using Gmail, you may need to generate an app password.
 
-    - MAIL_DEFAULT_SENDER: This is the default sender email address for outgoing emails.
+    **MAIL_DEFAULT_SENDER:** This is the default sender email address for outgoing emails.
 
 3.  Save the .env file.
 
 By setting up the .env file with the correct database and email credentials, your application will be able to establish connections to the database and send emails as needed.
-
-```
 
 #### Step 5: Running The Flask Application
 
@@ -161,12 +157,15 @@ By setting up the .env file with the correct database and email credentials, you
 2. Set the environment variable FLASK_APP to your main application file (usually app.py):
 
 - On Windows:
+
 ```
 
 set FLASK_APP=app.py
 
 ```
+
 - On macOS/Linux:
+
 ```
 
 export FLASK_APP=app.py
@@ -174,23 +173,17 @@ export FLASK_APP=app.py
 ```
 
 3. Run the Flask app:
+
 ```
 
 flask run
 
-````
+```
 
 #### Step 6: Accessing the Application
 
 - Open a web browser and navigate to http://127.0.0.1:5000 (or the URL provided in the terminal).
-- Register as a new user. Then make the user admin with the following queries:
-
-```SQL
-UPDATE users SET user_type = 'Admin' WHERE user_id = 1;
-INSERT INTO staff (user_id, role) VALUES (1, 'Admin');
-````
-
-Now the first user is set as an admin and you are ready to explore the website.
+- Register as a new user. Then make the user admin from the database to access admin actions.
 
 ##### Additional Notes
 
@@ -203,15 +196,15 @@ Thanks goes to these wonderful people
 
 <table>
   <tr>
-    <td align="center"><a href="https://sabbir.co"><img src="app/static/images/team/sabbir-bin-abdul-latif.jpeg" width="100px;" alt=""/>
+    <td align="center"><a href="https://www.linkedin.com/in/sabbirosa"><img src="https://media.licdn.com/dms/image/D5603AQEXlYoou3obDw/profile-displayphoto-shrink_400_400/0/1711444280181?e=1722470400&v=beta&t=fXEic4lkqk_btvtACrnC7C6mjiAQ9yKra1IqUv6c3i8" width="100px;" alt=""/>
     <br />
     <sub><b>Sabbir Bin Abdul Latif</b></sub></a>
     </td>
-    <td align="center"><a href="#"><img src="app/static/images/team/sultan-mehedi-masud.jpeg" width="100px;" alt=""/>
+    <td align="center"><a href="https://www.linkedin.com/in/sultan-mehedi-masud"><img src="https://media.licdn.com/dms/image/D4E03AQFfa-Q4crrt3g/profile-displayphoto-shrink_400_400/0/1699899673258?e=1722470400&v=beta&t=K09ADqeu80hJdNfNL-AScaRGGETHagUk8WaCIRhYNWQ" width="100px;" alt=""/>
     <br />
     <sub><b>Sultan Mehedi Masud</b></sub></a>
     </td>
-    <td align="center"><a href="#"><img src="app/static/images/team/susmita-biswas.jpeg" width="100px;" alt=""/>
+    <td align="center"><a href="https://www.linkedin.com/in/susmita-biswas-01a5b7267"><img src="https://media.licdn.com/dms/image/D5603AQH2Z94IGgE2Pg/profile-displayphoto-shrink_400_400/0/1704562312536?e=1722470400&v=beta&t=mQTP3og1hr2SCKSmfdAkjg3DKP1MeRrtK6SQ-yFJBxY" width="100px;" alt=""/>
     <br />
     <sub><b>Susmita Biswas</b></sub></a>
     </td>
